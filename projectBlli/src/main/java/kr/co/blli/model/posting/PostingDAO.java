@@ -1,10 +1,14 @@
 package kr.co.blli.model.posting;
 
+<<<<<<< HEAD
 import javax.annotation.Resource;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Repository;
+=======
+>>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git
 
+<<<<<<< HEAD
 @Repository
 public class PostingDAO {
 	@Resource
@@ -17,3 +21,8 @@ public class PostingDAO {
 	}
 	
 }
+=======
+public interface PostingDAO {
+
+}
+>>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git

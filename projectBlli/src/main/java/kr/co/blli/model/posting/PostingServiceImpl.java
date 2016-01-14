@@ -1,5 +1,6 @@
 package kr.co.blli.model.posting;
 
+<<<<<<< HEAD
 import java.io.IOException;
 import java.net.URL;
 
@@ -69,4 +70,15 @@ public class PostingServiceImpl implements PostingService {
 		}
 		return postingDAO.test2();
 	}
+=======
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PostingServiceImpl implements PostingService{
+	@Resource
+	private PostingDAO postingDAO;
+	
+>>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git
 }

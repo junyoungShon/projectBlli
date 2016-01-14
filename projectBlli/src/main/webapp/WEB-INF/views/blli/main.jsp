@@ -8,5 +8,6 @@
 </head>
 <body>
 여기는 메인페이쟈
+${sessionScope.blliMemberVO.memberId}님 환영합니다.
 </body>
 </html>

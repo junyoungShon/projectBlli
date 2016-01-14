@@ -1,8 +1,5 @@
 package kr.co.blli.model.admin;
 
-import org.springframework.stereotype.Repository;
-
-@Repository
-public class AdminDAO {
+public interface AdminDAO {
 
 }

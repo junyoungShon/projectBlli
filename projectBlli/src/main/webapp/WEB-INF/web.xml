@@ -7,11 +7,15 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring/root-context.xml</param-value>
 	</context-param>
+<<<<<<< HEAD
 	<!-- Spring security 사용을 위한 설정파일 로딩 -->
 	<!-- <context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:spring-security.xml</param-value>
 	</context-param> -->
+=======
+
+>>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
