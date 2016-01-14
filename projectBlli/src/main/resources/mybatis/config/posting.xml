@@ -3,7 +3,14 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  <mapper namespace="posting"> 
-	
+	<insert id="test">
+		insert into test(content) values(#{test})
+	</insert>
+	<select id="test2" resultType="String">
+		select content from(
+			select content, rownum from test
+		)where rownum = 1
+	</select>
  </mapper> 		
  
  

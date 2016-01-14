@@ -1,8 +1,7 @@
 package kr.co.blli.model.posting;
 
-import org.springframework.stereotype.Service;
+import java.io.IOException;
 
-@Service
-public class PostingService {
-
+public interface PostingService {
+	abstract String jsoupTest() throws IOException;
 }
