@@ -1,8 +1,10 @@
 package kr.co.blli.model.member;
 
-import org.springframework.stereotype.Service;
+import kr.co.blli.model.vo.BlliBabyVO;
+import kr.co.blli.model.vo.BlliMemberVO;
 
-@Service
-public class MemberService {
+public interface MemberService {
+
+	public void joinMemberByEmail(BlliMemberVO blliMemberVO, BlliBabyVO blliBabyVO);
 
 }

@@ -11,14 +11,16 @@
 <h1>이곳은 인덱스입니다 아무나 들어올 수 있죠.</h1>
 	<sec:authorize access="isAuthenticated()">
 		<sec:authentication property="name"/>님 환영해요
+		${sessionScope}
 	</sec:authorize>
 	<ul>
 		<li><a href="${initParam.root}member_goMain.do">goMain.do</a>
 		<li><a href="${initParam.root}admin_goAdminPage.do">goAdminPage.do</a>
-	
+		
 	<sec:authorize access="isAuthenticated()">
 		<li><a href="${initParam.root}j_spring_security_logout">로그아웃</a>
 	</sec:authorize>
+		<li><a href="${initParam.root}goJoinMemberPage.do">회원가입</a>
 	</ul>
 </body>
 </html>
