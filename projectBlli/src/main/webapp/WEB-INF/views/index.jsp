@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<form action="${initParam.root}search_jsoupTest.do">
 <h1>이곳은 인덱스입니다 아무나 들어올 수 있죠.</h1>
 	<sec:authorize access="isAuthenticated()">
 		<sec:authentication property="name"/>님 환영해요
@@ -16,12 +17,18 @@
 	<ul>
 		<li><a href="${initParam.root}member_goMain.do">goMain.do</a>
 		<li><a href="${initParam.root}admin_goAdminPage.do">goAdminPage.do</a>
+<<<<<<< HEAD
 		<li><a href="${initParam.root}sendMail.do">sendMail.do</a>
 		
+=======
+		<li><a href="${initParam.root}schedule_jsoupTest.do">포스팅 리스트 긁어모아</a>
+		<li><input type = "text" name="searchWord"><input type="submit" value="검색">
+>>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git
 	<sec:authorize access="isAuthenticated()">
 		<li><a href="${initParam.root}j_spring_security_logout">로그아웃</a>
 	</sec:authorize>
 		<li><a href="${initParam.root}goJoinMemberPage.do">회원가입</a>
 	</ul>
+</form>
 </body>
 </html>

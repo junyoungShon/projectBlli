@@ -41,7 +41,6 @@ CREATE TABLE blli_baby (
 );
 
 
-
 drop table blli_schedule cascade constraint;
 CREATE TABLE blli_schedule (
 	schedule_id          NUMBER(10) NOT NULL primary key,
