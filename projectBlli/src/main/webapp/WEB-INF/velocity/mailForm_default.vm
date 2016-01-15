@@ -1,0 +1,5 @@
+<tr>
+	<td height="${contentHeight}">
+		<div style="color.#333333; font-family: 돋움, Dotum, sans-serif, font-size:12px;">${content}</div>
+	</td>
+</tr>

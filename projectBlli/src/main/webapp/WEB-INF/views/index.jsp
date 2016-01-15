@@ -16,6 +16,7 @@
 	<ul>
 		<li><a href="${initParam.root}member_goMain.do">goMain.do</a>
 		<li><a href="${initParam.root}admin_goAdminPage.do">goAdminPage.do</a>
+		<li><a href="${initParam.root}sendMail.do">sendMail.do</a>
 		
 	<sec:authorize access="isAuthenticated()">
 		<li><a href="${initParam.root}j_spring_security_logout">로그아웃</a>
