@@ -1,15 +1,12 @@
 package kr.co.blli.model.posting;
 
-<<<<<<< HEAD
 import java.io.IOException;
-=======
->>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git
+import java.util.ArrayList;
+
+import kr.co.blli.model.vo.BlliPostingVO;
 
 public interface PostingService {
-<<<<<<< HEAD
 	abstract String jsoupTest() throws IOException;
-}
-=======
 
+	abstract ArrayList<BlliPostingVO> searchJsoupTest(String searchWord);
 }
->>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git

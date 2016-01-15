@@ -1,17 +1,12 @@
 package kr.co.blli.controller;
 
-<<<<<<< HEAD
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.annotation.Resource;
 
 import kr.co.blli.model.posting.PostingService;
-=======
-import javax.annotation.Resource;
-
-import kr.co.blli.model.posting.PostingService;
-import kr.co.blli.model.product.ProductService;
->>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git
+import kr.co.blli.model.vo.BlliPostingVO;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,18 +15,14 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class SearchController {
 	@Resource
-<<<<<<< HEAD
 	private PostingService postingService;
-	@RequestMapping("search_jsoupTest.do")
+	@RequestMapping("schedule_jsoupTest.do")
 	public ModelAndView JsoupTest() throws IOException{
-		String content = postingService.jsoupTest();
-		return new ModelAndView("TestPosting","content",content);
+		String result = postingService.jsoupTest();
+		return new ModelAndView("TestPosting", "result", result);
+	}
+	@RequestMapping("search_jsoupTest.do")
+	public ModelAndView JsoupTest2(String searchWord){
+		return new ModelAndView("searchResult","resultList",postingService.searchJsoupTest(searchWord));
 	}
 }
-=======
-	private ProductService productService;
-	@Resource
-	private PostingService postingService;
-
-}
->>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git

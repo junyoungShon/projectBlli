@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-${requestScope.content}
+${requestScope.result}
 </body>
 </html>

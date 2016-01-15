@@ -1,28 +1,18 @@
 package kr.co.blli.model.posting;
 
-<<<<<<< HEAD
-import javax.annotation.Resource;
+import java.util.List;
 
-import org.mybatis.spring.SqlSessionTemplate;
+import kr.co.blli.model.vo.BlliPostingVO;
+
 import org.springframework.stereotype.Repository;
-=======
->>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git
 
-<<<<<<< HEAD
 @Repository
-public class PostingDAO {
-	@Resource
-	private SqlSessionTemplate sqlSessionTemplate;
-	public void test(String test) {
-		sqlSessionTemplate.insert("posting.test",test);
-	}
-	public String test2() {
-		return sqlSessionTemplate.selectOne("posting.test2");
-	}
-	
-}
-=======
 public interface PostingDAO {
 
+	int updatePosting(BlliPostingVO postingVO);
+
+	void insertPosting(BlliPostingVO postingVO);
+
+	List<BlliPostingVO> searchJsoupTest(String searchWord);
+	
 }
->>>>>>> branch 'master' of https://github.com/junyoungShon/projectBlli.git
